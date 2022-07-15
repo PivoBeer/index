@@ -33,13 +33,18 @@ import Review.Rule as Rule exposing (Rule)
 import Simplify
 
 
+ignoreGenerated : Rule -> Rule
+ignoreGenerated rule =
+    rule
+        |> Rule.ignoreErrorsForDirectories [ "tests/", ".elm-spa/" ]
+        |> Rule.ignoreErrorsForFiles [ "src/Main.elm" ]
+
+
 config : List Rule
 config =
     [ Docs.ReviewAtDocs.rule
     , NoDebug.Log.rule
     , NoDebug.TodoOrToString.rule
-        |> Rule.ignoreErrorsForDirectories [ "tests/", ".elm-spa/" ]
-        |> Rule.ignoreErrorsForFiles [ "src/Main.elm" ]
     , NoExposingEverything.rule
     , NoImportingEverything.rule []
     , NoMissingTypeAnnotation.rule
@@ -57,3 +62,4 @@ config =
     , NoUnused.Variables.rule
     , Simplify.rule Simplify.defaults
     ]
+        |> List.map ignoreGenerated
