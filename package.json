@@ -2,6 +2,7 @@
   "name": "pivo",
   "license": "UNLICENSED",
   "version": "1.0.0",
+  "packageManager": "yarn@3.2.1",
   "scripts": {
     "start": "yarn && yarn build:dev && yarn dev",
     "test": "elm-test",
