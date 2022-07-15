@@ -1,31 +1,17 @@
-# Parcel, Tailwind CSS and Elm Spa boilerplate
+# The Pivo Website
 
 > 🌳  built with [elm-spa](https://elm-spa.dev)
 
-The corresponding blog post can be found [on my blog: Using Parcel JS with Tailwind CSS, Elm Lang and Elm Spa](https://vincent.jousse.org/blog/en/2021-09-21-parcel-tailwind-css-elm-lang-elm-spa).
+TODO: Add description
 
-## dependencies
+## Prerequisites
+* `node`
+* `yarn`
 
-This project requires the latest LTS version of [Node.js](https://nodejs.org/)
+## Running locally
+* `yarn`
+* `yarn start`
 
-```bash
-npm install -g elm elm-spa
-```
-
-## running locally
-
-```bash
-elm-spa server  # starts this app at http:/localhost:1234
-```
-
-### other commands
-
-```bash
-elm-spa add    # add a new page to the application
-elm-spa build  # production build
-elm-spa watch  # runs build as you code (without the server)
-```
-
-## learn more
-
-You can learn more at [elm-spa.dev](https://elm-spa.dev)
+## Production build
+* `yarn`
+* `yarn build`
