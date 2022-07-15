@@ -8,5 +8,5 @@ import View exposing (View)
 view : View msg
 view =
     { title = "Homepage"
-    , body = [ Html.div [ class "flex", class "items-center", class "h-screen", class "w-screen", class "justify-center" ] [ Html.h1 [] [ Html.text "Mere!" ] ] ]
+    , body = [ Html.div [ class "flex", class "items-center", class "h-screen", class "w-screen", class "justify-center", class "home-container" ] [ Html.h1 [] [ Html.text "Mere!" ] ] ]
     }

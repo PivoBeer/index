@@ -7,6 +7,7 @@ TODO: Add description
 ## Prerequisites
 * `node`
 * `yarn`
+* `elm`
 
 ## Running locally
 * `yarn`
